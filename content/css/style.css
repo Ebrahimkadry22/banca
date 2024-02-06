@@ -1,0 +1,112 @@
+/* start globel */
+:root {
+    --primary:#66209D;
+    --hover:#ffffff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.rounded {
+    border-radius: 50px !important;
+}
+.rounded-10 {
+    border-radius: 20px ;
+}
+.py {
+    padding: 40px 0 !important;
+}
+.text-primary {
+    color: var(--primary) !important;
+}
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.btn {
+    padding: .5rem .9rem;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/* main button */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--hover);
+    transition:background-color border-color color .3s linear;
+}
+.btn-primary:hover {
+background-color: var(--hover);
+border-color: var(--primary);
+color: var(--primary);
+}
+/* @media (max-width:992px){
+    .btn {
+        
+    }
+} */
+/* End globel */
+/* Start navbar */
+.navbar {
+    min-height: 60px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* End navbar */
+/* Start hero */
+
+.content {
+    max-width: 500px;
+}
+.image__hero {
+    width: 400px;
+}
+
+/* End hero */
+/* media */
+@media (max-width:992px){
+    .navbar {
+        position: relative !important;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+    .hero {
+        padding: 0 0 !important;
+    }
+}
+@media (min-width: 576px){
+    
+}
+/* media */
+/* Start haz */
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.step::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background-color: var(--primary);
+    top: 34px;
+    opacity: .2;
+}
+/* End haz */
+/* Start edu */
+.cta-form {
+    max-width: 480px;
+}
+.cta-form .form-control {
+    min-height: 65px;
+}
+.cta-form .btn {
+    top: 12px;
+    right: 25px;
+}
+/* End edu */
